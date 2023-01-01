@@ -1,0 +1,49 @@
+platform :ios, '14.0'
+
+use_frameworks!
+# 忽略警告
+inhibit_all_warnings!
+
+target 'SBSafetyApp' do
+  pod 'Alamofire', '5.6.2'
+  pod 'SnapKit'
+  pod 'SnapKitExtend', '~> 1.1.0'
+  pod 'JFPopup'
+  pod 'Toast-Swift'
+  pod 'DeviceKit'
+  pod 'MaLiang'
+  pod 'RxSwift', '6.5.0'
+  pod 'RxCocoa', '6.5.0'
+  pod 'RxGesture'
+  pod 'HandyJSON'
+  pod 'AAInfographics'
+  pod 'JTAppleCalendar'
+  pod 'Popover'
+  pod 'Hash'
+  pod 'Kingfisher'
+  pod 'MarkdownView'
+  pod 'GradientProgressBar', '~> 3.0'
+end
+
+post_install do |installer|
+  # This removes the warning about swift conversion, hopefuly forever!
+  installer.pods_project.root_object.attributes['LastSwiftMigration'] = 9999
+  installer.pods_project.root_object.attributes['LastSwiftUpdateCheck'] = 9999
+  installer.pods_project.root_object.attributes['LastUpgradeCheck'] = 9999
+
+  shared_data_dir = Xcodeproj::XCScheme.user_data_dir(installer.pods_project.path)
+  Dir["#{shared_data_dir}/*.xcscheme"].each do |scheme_path|
+    scheme = Xcodeproj::XCScheme.new scheme_path
+    scheme.doc.root.attributes['LastUpgradeVersion'] = 9999
+    scheme.save!
+  end
+
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+      # 解决pods中证书不正确的问题。如果主项目变更了证书，此处也需要做出对应变更
+      config.build_settings['DEVELOPMENT_TEAM'] = '9YJFMP3D59'
+    end
+  end
+
+end

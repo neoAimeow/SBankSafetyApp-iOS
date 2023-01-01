@@ -1,0 +1,97 @@
+PODS:
+  - AAInfographics (7.3.0)
+  - Alamofire (5.6.2)
+  - DeviceKit (5.0.0)
+  - GradientProgressBar (3.0.0)
+  - HandyJSON (5.0.2)
+  - Hash (1.5.0)
+  - JFPopup (1.5.2):
+    - JRBaseKit (~> 1.0.0)
+  - JRBaseKit (1.0.0)
+  - JTAppleCalendar (8.0.4)
+  - Kingfisher (7.4.1)
+  - MaLiang (2.9.2)
+  - MarkdownView (1.9.1)
+  - Popover (1.3.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxGesture (4.0.4):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SnapKit (5.6.0)
+  - SnapKitExtend (1.1.0):
+    - SnapKit
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - AAInfographics
+  - Alamofire (= 5.6.2)
+  - DeviceKit
+  - GradientProgressBar (~> 3.0)
+  - HandyJSON
+  - Hash
+  - JFPopup
+  - JTAppleCalendar
+  - Kingfisher
+  - MaLiang
+  - MarkdownView
+  - Popover
+  - RxCocoa (= 6.5.0)
+  - RxGesture
+  - RxSwift (= 6.5.0)
+  - SnapKit
+  - SnapKitExtend (~> 1.1.0)
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - AAInfographics
+    - Alamofire
+    - DeviceKit
+    - GradientProgressBar
+    - HandyJSON
+    - Hash
+    - JFPopup
+    - JRBaseKit
+    - JTAppleCalendar
+    - Kingfisher
+    - MaLiang
+    - MarkdownView
+    - Popover
+    - RxCocoa
+    - RxGesture
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - SnapKitExtend
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  AAInfographics: ee2a7959acdd0a00243b7f5a3f03a1fa2bdf0781
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  DeviceKit: 0fd016a2cb67aca17c33dc23171cac270131eb88
+  GradientProgressBar: 5447e7686fed1bd363507d817d533db8d43cb29e
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  Hash: 9765c4f6b0bbde0980b2122de0535e968bdfec37
+  JFPopup: f4d30e7363766611f7e76c0c8c75d28b24cbeb49
+  JRBaseKit: ed75cfce9e340a3316bee0eaac0fa1c400714287
+  JTAppleCalendar: f95b02c64f56d6f938fbf6582a04dcab9d709ebd
+  Kingfisher: cd762a593a61b2fbecf7645c00f9a801a3ebfc9c
+  MaLiang: 7cf6c70e37577b5ec1b34add37fa6d58808f5451
+  MarkdownView: 22249778219cc22901f1454e8355298dd0bda7f0
+  Popover: 10e1d9528f81d9504df984b7b3f491292bc1822d
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SnapKitExtend: aa30cf37196195fae9c4354686cc7710184ebfcc
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 2aed220dcb4b7cb762c44d00e54c1be80d175646
+
+COCOAPODS: 1.11.3
